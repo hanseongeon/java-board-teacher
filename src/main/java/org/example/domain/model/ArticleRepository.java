@@ -1,6 +1,7 @@
-package org.example.domain;
+package org.example.domain.model;
 
 import org.example.base.CommonUtil;
+import org.example.domain.model.Article;
 
 import java.util.ArrayList;
 

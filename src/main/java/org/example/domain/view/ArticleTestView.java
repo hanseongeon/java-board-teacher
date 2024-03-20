@@ -1,8 +1,10 @@
-package org.example.domain;
+package org.example.domain.view;
+
+import org.example.domain.model.Article;
 
 import java.util.ArrayList;
 
-public class ArticleView {
+public class ArticleTestView {
 
     public void printArticleList(ArrayList<Article> targetList) {
 
