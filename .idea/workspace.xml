@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0509c33a-2f01-4fba-b5cc-933cce2a8789" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article.json" beforeDir="false" afterPath="$PROJECT_DIR$/Article.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/base/BoardApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/base/BoardApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/controller/ArticleTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/controller/ArticleTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/model/ArticleFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/model/ArticleFileRepository.java" afterDir="false" />
-    </list>
+    <list default="true" id="0509c33a-2f01-4fba-b5cc-933cce2a8789" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

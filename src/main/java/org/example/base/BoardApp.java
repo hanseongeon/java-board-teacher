@@ -1,11 +1,12 @@
 package org.example.base;
 
-import org.example.domain.controller.ArticleTestController;
+import org.example.domain.controller.ArticleController;
+import org.example.domain.controller.ArticleController;
 
 import java.util.Scanner;
 
 public class BoardApp {
-    ArticleTestController articleController = new ArticleTestController();
+    ArticleController articleController = new ArticleController();
     Scanner scan = new Scanner(System.in);
     public void run() {
 

@@ -8,7 +8,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class ArticleFileRepository {
+public class ArticleFileRepository extends Repository {
+
     CommonUtil commonUtil = new CommonUtil();
     int latestArticleId = 1;
     private ArrayList<Article> articleList = new ArrayList<>();
@@ -22,7 +23,11 @@ public class ArticleFileRepository {
         this.latestArticleId = this.articleList.get((articleList.size() - 1)).getId();
     }
 
-    public void saveArticle(String title, String body) {
+    public void makeTestData(){
+        System.out.println("테스트데이터를 생성하지 않습니다.");
+    }
+
+    public Article saveArticle(String title, String body) {
         // 제목이 title, 내용이 body, 조회수 0, 등록날짜 현재시간인 게시물을
         // json 파일로 저장
         latestArticleId++;
@@ -38,6 +43,7 @@ public class ArticleFileRepository {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return article;
     }
 
     public ArrayList<Article> findAll() {
@@ -85,7 +91,7 @@ public class ArticleFileRepository {
         return articleList;
     }
 
-    public Article findById(int id) {
+    public Article findArticleById(int id) {
         // id에 해당하는 게시물(article 반환)
         for (int i = 0; i < articleList.size(); i++) {
             Article a1 = articleList.get(i);

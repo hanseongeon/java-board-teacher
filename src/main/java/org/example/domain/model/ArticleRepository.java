@@ -5,7 +5,7 @@ import org.example.domain.model.Article;
 
 import java.util.ArrayList;
 
-public class ArticleRepository {
+public class ArticleRepository extends Repository{
     ArrayList<Article> articleList = new ArrayList<>();
     CommonUtil commonUtil = new CommonUtil();
     int latestArticleId = 4;

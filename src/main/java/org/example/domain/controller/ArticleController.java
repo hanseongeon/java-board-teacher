@@ -2,7 +2,9 @@ package org.example.domain.controller;
 
 import org.example.base.CommonUtil;
 import org.example.domain.model.Article;
+import org.example.domain.model.ArticleFileRepository;
 import org.example.domain.model.ArticleRepository;
+import org.example.domain.model.Repository;
 import org.example.domain.view.ArticleView;
 
 import java.util.ArrayList;
@@ -13,7 +15,7 @@ public class ArticleController { // Model + Controller
 
     CommonUtil commonUtil = new CommonUtil();
     ArticleView articleView = new ArticleView();
-    ArticleRepository articleRepository = new ArticleRepository();
+    Repository articleRepository = new ArticleFileRepository(); // 메모리 DB
 
     Scanner scan = commonUtil.getScanner();
     int WRONG_VALUE = -1;
