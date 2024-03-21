@@ -93,44 +93,17 @@ public class ArticleFileRepository {
                 return a1;
             }
         }
-//        String filePath = "Article.json";
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        try {
-//            // JSON 파일 읽기
-//            File file = new File(filePath);
-//
-//            // JSON 파일을 자바 객체로 변환
-//            ArrayList<Article> article = objectMapper.readValue(file, new TypeReference<ArrayList<Article>>() {
-//            });
-//            for (int i = 0; i < article.size(); i++) {
-//                Article a1 = article.get(i);
-//                if (a1.getId() == id) {
-//                    return a1;
-//                }
-//            }
-//        } catch (IOException e) {
-//            System.out.println("An error occurred while reading object from JSON file.");
-//            e.printStackTrace();
-//        } catch (IndexOutOfBoundsException e) {
-//            System.out.println("da");
-//        }
-
         return null;
     }
 
     public void deleteArticle(Article article) {
+        articleList.remove(article);
+
         String filePath = "Article.json";
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             // JSON 파일 읽기
             File file = new File(filePath);
-
-            // JSON 파일을 자바 객체로 변환
-//            ArrayList<Article> a1 = objectMapper.readValue(file, new TypeReference<ArrayList<Article>>() {
-//            });
-
-//            articleList = a1;
-            articleList.remove(article);
 
             objectMapper.writeValue(file, articleList);
         } catch (IOException e) {
@@ -141,4 +114,54 @@ public class ArticleFileRepository {
         }
     }
 
+    public void updateArticle(Article article, String newTitle, String newBody) {
+        article.setTitle(newTitle);
+        article.setBody(newBody);
+
+        String filePath = "Article.json";
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            // JSON 파일 읽기
+            File file = new File(filePath);
+
+            //
+            objectMapper.writeValue(file, articleList);
+        } catch (IOException e) {
+            System.out.println("An error occurred while reading object from JSON file.");
+            e.printStackTrace();
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("da");
+        }
+    }
+
+
+    public ArrayList<Article> findArticleByKeyword(String keyword) {
+        ArrayList<Article> searchedList = new ArrayList<>();
+
+        for (int i = 0; i < articleList.size(); i++) {
+            Article article = articleList.get(i);
+            if (article.getTitle().contains(keyword)) {
+                searchedList.add(article);
+            }
+        }
+
+        return searchedList;
+    }
+
+    public void hitSave() {
+        String filePath = "Article.json";
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            // JSON 파일 읽기
+            File file = new File(filePath);
+
+            //
+            objectMapper.writeValue(file, articleList);
+        } catch (IOException e) {
+            System.out.println("An error occurred while reading object from JSON file.");
+            e.printStackTrace();
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("da");
+        }
+    }
 }

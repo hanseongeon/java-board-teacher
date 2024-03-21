@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0509c33a-2f01-4fba-b5cc-933cce2a8789" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Article.json" beforeDir="false" afterPath="$PROJECT_DIR$/Article.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/base/BoardApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/base/BoardApp.java" afterDir="false" />
@@ -31,9 +32,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2dvvGvszrjUNFQoYBynC4CiYpgL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,13 +44,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.FileTest.executor": "Run",
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Gradle.java-board-teacher [:FileTest.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/admin/IdeaProjects/java-board-teacher",
     "onboarding.tips.debug.path": "C:/Users/admin/IdeaProjects/java-board-teacher/src/main/java/org/example/Main.java",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
@@ -84,16 +86,5 @@
       <updated>1710901275988</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/domain/model/ArticleFileRepository.java</url>
-          <line>126</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
