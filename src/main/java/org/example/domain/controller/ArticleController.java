@@ -2,8 +2,7 @@ package org.example.domain.controller;
 
 import org.example.base.CommonUtil;
 import org.example.domain.model.Article;
-import org.example.domain.model.ArticleFileRepository;
-import org.example.domain.model.ArticleRepository;
+import org.example.domain.model.ArticleMySQLRepository;
 import org.example.domain.model.Repository;
 import org.example.domain.view.ArticleView;
 
@@ -15,7 +14,7 @@ public class ArticleController { // Model + Controller
 
     CommonUtil commonUtil = new CommonUtil();
     ArticleView articleView = new ArticleView();
-    Repository articleRepository = new ArticleFileRepository(); // 메모리 DB
+    Repository articleRepository = new ArticleMySQLRepository(); // 메모리 DB
 
     Scanner scan = commonUtil.getScanner();
     int WRONG_VALUE = -1;

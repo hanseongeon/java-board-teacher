@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class ArticleFileRepository extends Repository {
+public class ArticleFileRepository implements Repository {
 
     CommonUtil commonUtil = new CommonUtil();
     int latestArticleId = 1;

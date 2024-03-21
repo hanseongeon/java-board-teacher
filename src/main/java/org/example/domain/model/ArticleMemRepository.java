@@ -1,16 +1,15 @@
 package org.example.domain.model;
 
 import org.example.base.CommonUtil;
-import org.example.domain.model.Article;
 
 import java.util.ArrayList;
 
-public class ArticleRepository extends Repository{
+public class ArticleMemRepository implements Repository{
     ArrayList<Article> articleList = new ArrayList<>();
     CommonUtil commonUtil = new CommonUtil();
     int latestArticleId = 4;
 
-    public ArticleRepository() {
+    public ArticleMemRepository() {
         makeTestData(); // 시작과 동시에 테스트 데이터 생성
     }
 
