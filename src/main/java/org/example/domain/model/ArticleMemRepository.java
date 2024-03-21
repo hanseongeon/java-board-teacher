@@ -69,4 +69,6 @@ public class ArticleMemRepository implements Repository{
 
         return article;
     }
+
+    public void hitSave(Article article){}
 }

@@ -46,6 +46,10 @@ public class ArticleController { // Model + Controller
 
         article.increaseHit();
         articleView.printArticleDetail(article);
+        articleRepository.hitSave(article);
+
+
+
 
     }
     public void delete() {

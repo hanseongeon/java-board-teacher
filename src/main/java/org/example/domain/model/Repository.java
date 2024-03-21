@@ -17,4 +17,5 @@ public  interface Repository {
      ArrayList<Article> findAll();
 
      Article saveArticle(String title, String body);
+    void hitSave(Article article);
 }

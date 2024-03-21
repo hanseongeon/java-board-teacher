@@ -154,7 +154,7 @@ public class ArticleFileRepository implements Repository {
         return searchedList;
     }
 
-    public void hitSave() {
+    public void hitSave(Article article) {
         String filePath = "Article.json";
         ObjectMapper objectMapper = new ObjectMapper();
         try {
