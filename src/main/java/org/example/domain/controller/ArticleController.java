@@ -22,9 +22,14 @@ public class ArticleController { // Model + Controller
 
     public void search() {
         // 검색어를 입력
-        System.out.println("검색 키워드를 입력해주세요 :");
+        System.out.print("검색 키워드를 입력해주세요 :");
         String keyword = scan.nextLine();
         ArrayList<Article> searchedList = articleRepository.findArticleByKeyword(keyword);
+
+        if (searchedList == null) {
+            System.out.println("없는 게시물입니다.");
+            return;
+        }
 
         articleView.printArticleList(searchedList);
     }
@@ -99,6 +104,11 @@ public class ArticleController { // Model + Controller
 
     public void list() {
         ArrayList<Article> articleList = articleRepository.findAll();
+
+        if (articleList == null) {
+            System.out.println("게시물이 없습니다.");
+            return;
+        }
         articleView.printArticleList(articleList); // 전체 출력 -> 전체 저장소 넘기기
     }
 
